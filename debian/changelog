@@ -1,7 +1,28 @@
-nymea (0.24.0) UNRELEASED; urgency=medium
+nymea (0.24.0) xenial; urgency=medium
 
+  [ Michael Zanetti ]
+  * Retry setup if it fails at startup (e.g. network isn't up yet)
+  * Don't call thingRemoved() on the plugin in case of reconfiguring
+  * Add support for Python plugins
+  * Make it build with Qt 5.14 and -Wno-deprecated
 
- -- Michael Zanetti <michael.zanetti@nymea.io>  Tue, 01 Sep 2020 12:20:29 +0200
+  [ Radek Dostál ]
+  * README.md: fix license version
+
+  [ Michael Zanetti ]
+  * 0.24
+  * Make nymea-dev-tools depend on libnymea1-dev
+  * Make the signalStrength state in wirelessconnectable interface
+    optional
+  * Add update interface
+  * Allow states, events and actions in interfaces to be optional
+  * Silence the warning about not being able to translate plugins
+  * Fix a potential crash in logging handlers
+  * Add caching information to client API
+  * Don't log all state changes by default any more
+  * Fix the webserver for serving static files
+
+ -- Jenkins <jenkins@nymea.io>  Wed, 23 Sep 2020 23:43:25 +0200
 
 nymea (0.23.0) xenial; urgency=medium
 
